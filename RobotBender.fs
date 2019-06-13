@@ -1,5 +1,9 @@
 (* Auto-generated code below aims at helping you parse *)
 (* the standard input according to the problem statement. *)
+
+(* Lien : https://www.codingame.com/ide/puzzle/bender-episode-1
+    Cliquer sur Resoudre, et l'énoncé se trouve à gauche *)
+
 open System
 open System.Collections.Generic
 
