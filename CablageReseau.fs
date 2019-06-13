@@ -6,14 +6,13 @@
   Possibilité de choisir F# comme langage. *)
 
 open System
-open System.Collections.Generic
+open System.Collections.Generic (* Utile pour l'utilisation des listes mutables *)
 
 let N = int(Console.In.ReadLine())
 let listX = new List<int64>()
 let listY = new List<int64>()
 for i in 0 .. N - 1 do
     let token = (Console.In.ReadLine()).Split [|' '|]
-    //eprintfn "%A" token
     let X = int64(token.[0])
     let Y = int64(token.[1])
     listX.Add(X)
