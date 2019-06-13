@@ -5,7 +5,8 @@
 (* The inputs you are given are automatically updated according to your last actions. *)
 
 (* Lien : https://www.codingame.com/training/easy/the-descent
-  Cliquer sur Resoudre, et l'énoncé se trouve à gauche *)
+  Cliquer sur Resoudre, et l'énoncé se trouve à gauche.
+  Choisir F# comme langage de programmation *)
 
 open System
 
