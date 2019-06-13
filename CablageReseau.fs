@@ -1,6 +1,10 @@
 (* Auto-generated code below aims at helping you parse *)
 (* the standard input according to the problem statement. *)
 
+(* Lien du puzzle : https://www.codingame.com/training/medium/network-cabling
+  Cliquer sur Resoudre, et l'énoncé du problème se trouve à gauche de l'écran.
+  Possibilité de choisir F# comme langage. *)
+
 open System
 open System.Collections.Generic
 
@@ -19,16 +23,16 @@ let arrayX = listX.ToArray()
 let arrayY = listY.ToArray()
 
 let sumDist (x:int64) (A:array<int64>) = 
-    (* Distance totale des éléments d'une liste par rapport à un entier x *)
+    (* Somme totale des distances des éléments d'une liste par rapport à un entier x *)
     Array.fold (fun s t -> s + abs (t-x)) 0L A
 
 let findMedian (AY:array<int64>) = 
-    (* Recherche dichotomique du median d'un array *)
+    (* Recherche dichotomique de la valeur médiane d'un tableau d'entiers 64 bits non trié *)
+    (* Fonction utilisée pour calculer la longueur totale minimale des cables de ramification à poser *)
     let mutable a = Array.min AY
     let mutable b = Array.max AY
     while (b-a)>=1L do
         let c = (a+b)/2L
-        //eprintfn "%i %i %i" a b c
         let difL = (sumDist (c-1L) AY) - (sumDist c AY)
         let difR = (sumDist c AY) - (sumDist (c+1L) AY)
         if difL*difR>0L then 
@@ -40,10 +44,12 @@ let findMedian (AY:array<int64>) =
     eprintfn "Finalement : a=%i b=%i" a b
     a
 
+(* Longueur du cable principal à poser *)
 let lengthCableX = (Array.max arrayX) - (Array.min arrayX)
 
 (* Write an action using printfn *)
 (* To debug: eprintfn "Debug message" *)
 
+(* Affichage en sortie standard du résultat calculé *)
 
 printfn "%i" <| lengthCableX + (sumDist (findMedian arrayY) arrayY)
