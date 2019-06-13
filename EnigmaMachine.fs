@@ -2,7 +2,8 @@
 (* the standard input according to the problem statement. *)
 
 (* Lien : https://www.codingame.com/training/easy/encryptiondecryption-of-enigma-machine
-  Cliquer sur Resoudre, et l'énoncé se trouve à gauche *)
+  Cliquer sur Resoudre, et l'énoncé se trouve à gauche
+  Choisir F# comme langage de programmation *)
 
 open System
 
