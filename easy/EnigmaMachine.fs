@@ -1,7 +1,7 @@
 (* Auto-generated code below aims at helping you parse *)
 (* the standard input according to the problem statement. *)
 
-(* Lien : https://www.codingame.com/training/easy/encryptiondecryption-of-enigma-machine
+(* Lien du puzzle : https://www.codingame.com/training/easy/encryptiondecryption-of-enigma-machine
 
   Cliquer sur Resoudre, et l'énoncé se trouve à gauche
   Choisir F# comme langage de programmation *)
