@@ -2,6 +2,7 @@
 (* the standard input according to the problem statement. *)
 
 (* Lien du puzzle : https://www.codingame.com/training/medium/network-cabling
+
   Cliquer sur Resoudre, et l'énoncé du problème se trouve à gauche de l'écran.
   Possibilité de choisir F# comme langage. *)
 
