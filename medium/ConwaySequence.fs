@@ -2,6 +2,7 @@
 (* the standard input according to the problem statement. *)
 
 (* Lien : https://www.codingame.com/training/medium/conway-sequence
+
   Cliquer sur Resoudre, et l'énoncé se trouve à gauche.
   Choisir F# comme langage de programmation *)
 
